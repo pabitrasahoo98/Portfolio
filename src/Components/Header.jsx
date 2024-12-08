@@ -3,7 +3,7 @@ import {AppBar,Box,Divider,Drawer,IconButton,Toolbar,Typography} from "@mui/mate
 import { Link } from 'react-router-dom'
 import MenuIcon from "@mui/icons-material/Menu"
 import "./HeaderStyle.css";
-import  Logo1 from "../images/logo512.png"
+import portfolio1 from "../images/Portfolio1.png"
 
 
 
@@ -21,11 +21,11 @@ const drawer=(
                 <Box>
                 <Link to={"/"}>
                 <Box>
-                    <img src={Logo1} alt="Portfolio" style={{ height: "60px" }} />
+                    <img src={portfolio1} alt="Portfolio" style={{ height: "60px" }} />
                 </Box>
-                <Typography component={"div"} color={"goldenrod"} variant='h6'  sx={{flexGrow:1,my:1}}>
+               {/* <Typography component={"div"} color={"goldenrod"} variant='h4'  sx={{flexGrow:1,my:1}}>
                 PORTFOLIO
-                </Typography>
+                </Typography>*/}
                 </Link>
                 </Box>
                 <Divider/>
@@ -61,18 +61,18 @@ const drawer=(
   return (
     <>
     <Box>
-        <AppBar component={"nav"} sx={{bgcolor:"#74703F" ,minHeight:"70px"}}>
+        <AppBar component={"nav"} sx={{bgcolor:"#5e17eb" ,minHeight:"70px"}}>
             <Toolbar>
                 <IconButton color={'inherit'} aria-label='open drawer' edge="start" sx={{mr:2,display:{sm:"none"},}} onClick={handleDrawerToggle}>
                     <MenuIcon/>
                 </IconButton>
                 <>
                 <Box>
-                    <img src={Logo1} alt="Portfolio" style={{ height: "50px" }}/>
+                    <img src={portfolio1} alt="Portfolio" style={{ height: "100px" }}/>
                 </Box>
-                <Typography component={"div"} color={"goldenrod"} variant='h6'  sx={{flexGrow:1}}>
+                {/*<Typography component={"div"} color={"goldenrod"} variant='h5'  sx={{flexGrow:1}}>
                 PortFolio
-                </Typography>
+                </Typography>*/}
                 </>
                 <Box sx={{display:{xs:"none",sm:"block"}}}>
                     <ul className='navigation-menu'>

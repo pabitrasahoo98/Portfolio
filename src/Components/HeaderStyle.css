@@ -1,42 +1,78 @@
-.navigation-menu{
+/* Desktop Navigation Menu */
+.navigation-menu {
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:space-evenly;
 }
 
-.navigation-menu li{
+.navigation-menu li {
     margin: 0 20px;
 }
-.navigation-menu li a{
+
+.navigation-menu li a {
     text-decoration: none;
     color: white;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    transition: color 0.3s ease; /* Smooth transition for hover */
 }
-.mobile-navigation{
+
+.navigation-menu li a:hover {
+    color: goldenrod; /* Adds golden color on hover */
+}
+
+/* Mobile Navigation Menu */
+.mobile-navigation {
     list-style: none;
 }
-.mobile-navigation li{
+
+.mobile-navigation li {
     margin-top: 20px;
 }
-.mobile-navigation li a{
+
+.mobile-navigation li a {
     text-decoration: none;
     font-size: 1.4rem;
     color: black;
+    font-family: Roboto;
+    padding: 10px 20px; /* Adds padding for better touch target size */
+    transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
-.right-header{
+.mobile-navigation li a:hover {
+    color: goldenrod; /* Adds golden color on hover */
+}
+
+/* Right Aligned Navigation (Optional for Icons or Additional Links) */
+.right-header {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.right-header li{
+
+.right-header li {
     margin: 0 5px;
 }
-.right-header li a{
+
+.right-header li a {
     text-decoration: none;
     color: white;
 }
-.right-header  >li > a > sup{
+
+.right-header > li > a > sup {
     color: gold;
+}
+
+/* Mobile Drawer Menu Styling */
+.MuiDrawer-paper {
+    padding: 10px 0; /* Adds some padding to the drawer */
+}
+
+/* Optional: Add some styling for active links (if you want) */
+.navigation-menu li a.active,
+.mobile-navigation li a.active {
+    color: goldenrod;
+    font-weight: bold; /* Adds bold style to active links */
 }
