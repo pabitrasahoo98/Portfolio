@@ -2,8 +2,9 @@
 .navigation-menu {
     list-style: none;
     display: flex;
-    align-items:center;
-    justify-content:space-evenly;
+    align-items: center;
+    justify-content: flex-start;  /* Align to the left by default */
+    margin-left: 20px;  /* Add margin only if needed */
 }
 
 .navigation-menu li {
@@ -12,14 +13,14 @@
 
 .navigation-menu li a {
     text-decoration: none;
-    color:#F5F5F5;
-    font-family: Chilanka;
+    color: #F5F5F5;
+    font-family: Chilanka, sans-serif;  /* Added fallback font */
     font-size: 1.5rem;
     transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
 .navigation-menu li a:hover {
-    color: rgb(18, 2, 37); /* Adds golden color on hover */
+    color: rgb(18, 2, 37); /* Adds darker color on hover */
 }
 
 /* Mobile Navigation Menu */
@@ -34,8 +35,8 @@
 .mobile-navigation li a {
     text-decoration: none;
     font-size: 1.4rem;
-    color: black;
-    font-family: Roboto;
+    color: rgb(18, 2, 37);  /* Dark color for mobile */
+    font-family: Roboto, sans-serif;  /* Added fallback font */
     padding: 10px 20px; /* Adds padding for better touch target size */
     transition: color 0.3s ease; /* Smooth transition for hover */
 }
@@ -44,35 +45,44 @@
     color: goldenrod; /* Adds golden color on hover */
 }
 
-/* Right Aligned Navigation (Optional for Icons or Additional Links) */
-.right-header {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.right-header li {
-    margin: 0 5px;
-}
-
-.right-header li a {
-    text-decoration: none;
-    color:#d9d9d9;
-}
-
-.right-header > li > a > sup {
-    color: gold;
-}
-
 /* Mobile Drawer Menu Styling */
 .MuiDrawer-paper {
     padding: 10px 0; /* Adds some padding to the drawer */
 }
 
-/* Optional: Add some styling for active links (if you want) */
+/* Active Links Styling */
 .navigation-menu li a.active,
 .mobile-navigation li a.active {
     color: goldenrod;
     font-weight: bold; /* Adds bold style to active links */
+    text-decoration: underline;  /* Underlines active links */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+
+    .mobile-navigation {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-navigation li {
+        margin-top: 15px;
+    }
+
+    .mobile-navigation li a {
+        font-size: 1.6rem;  /* Increase font size on mobile for better readability */
+    }
+}
+
+/* Optional: Responsive layout for large screens */
+@media screen and (min-width: 1024px) {
+    .navigation-menu {
+        margin-left: 50px;  /* Larger spacing for bigger screens */
+    }
+
+    .navigation-menu li {
+        margin: 0 30px;  /* Larger spacing between items */
+    }
 }
