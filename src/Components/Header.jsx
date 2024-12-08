@@ -3,7 +3,8 @@ import {AppBar,Box,Divider,Drawer,IconButton,Toolbar,Typography} from "@mui/mate
 import { Link } from 'react-router-dom'
 import MenuIcon from "@mui/icons-material/Menu"
 import "./HeaderStyle.css";
-import portfolio1 from "../images/Portfolio1.png"
+import portfolio1 from "../images/Portfolio4.png"
+import portfolio5 from "../images/Portfolio5.png"
 
 
 
@@ -21,7 +22,7 @@ const drawer=(
                 <Box>
                 <Link to={"/"}>
                 <Box>
-                    <img src={portfolio1} alt="Portfolio" style={{ height: "60px" }} />
+                    <img src={portfolio5} alt="Portfolio" style={{ height: "80px" }} />
                 </Box>
                {/* <Typography component={"div"} color={"goldenrod"} variant='h4'  sx={{flexGrow:1,my:1}}>
                 PORTFOLIO
@@ -61,14 +62,14 @@ const drawer=(
   return (
     <>
     <Box>
-        <AppBar component={"nav"} sx={{bgcolor:"#5e17eb" ,minHeight:"70px"}}>
+        <AppBar component={"nav"} sx={{bgcolor:"#5e17eb" ,minHeight:"80px"}}>
             <Toolbar>
                 <IconButton color={'inherit'} aria-label='open drawer' edge="start" sx={{mr:2,display:{sm:"none"},}} onClick={handleDrawerToggle}>
                     <MenuIcon/>
                 </IconButton>
                 <>
                 <Box>
-                    <img src={portfolio1} alt="Portfolio" style={{ height: "100px" }}/>
+                    <img src={portfolio1} alt="Portfolio" style={{ height: "100px",width:'130px' }}/>
                 </Box>
                 {/*<Typography component={"div"} color={"goldenrod"} variant='h5'  sx={{flexGrow:1}}>
                 PortFolio
