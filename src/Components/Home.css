@@ -1,0 +1,95 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    height: 80vh;
+    flex-wrap: wrap; /* Added for better responsiveness */
+}
+
+.home .left {
+    background-color: rgb(40, 47, 97);
+    width: 650px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid gold;
+    box-shadow: 5px 5px 10px 10px rgba(101, 175, 100, 0.5);
+    color: white; /* Ensures contrast with the dark background */
+}
+
+.home .right .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .right .img img {
+    height: 270px;
+    width: 270px;
+    border: 5px solid yellow;
+    border-radius: 50%;
+    animation-name: superman;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    max-width: 100%; /* Added for responsiveness */
+    height: auto; /* Ensure aspect ratio remains intact */
+}
+
+/* Keyframe animation for image effects */
+@keyframes superman {
+    0% {
+        border-color: blue;
+        transform: translate(0, 0px);
+        box-shadow: 10px 10px 100px 50px blue;
+    }
+    25% {
+        border-color: rgb(239, 244, 11);
+        box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+    }
+    50% {
+        border-color: rgb(12, 12, 199);
+        transform: translate(0, 10px);
+        box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+    }
+    75% {
+        border-color: rgb(130, 217, 160);
+        box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+    }
+    100% {
+        border-color: rgb(50, 55, 205);
+        transform: translate(0, -0px);
+        box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+    }
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .home {
+        margin-top: 15vmax;
+        flex-direction: column; /* Stack the sections vertically */
+        height: auto; /* Remove fixed height for better flexibility */
+        margin-bottom: 5vmax;
+    }
+
+    .home .left {
+        width: 100%; /* Make left section full width on smaller screens */
+        margin-bottom: 20px; /* Space between left and right sections */
+    }
+
+    .home .right .img img {
+        height: 200px; /* Resize image for smaller screens */
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .left {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .home .right .img img {
+        height: 180px; /* Further resize image */
+        width: 180px;
+    }
+}

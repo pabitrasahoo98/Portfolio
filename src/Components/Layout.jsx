@@ -7,11 +7,11 @@ const Layout = ({children}) => {
   
  
 
-  return (<>
+  return (<div>
     <Header/>
     <div>{children}</div>
     <Footer/>
-    </>
+    </div>
   )
 }
 

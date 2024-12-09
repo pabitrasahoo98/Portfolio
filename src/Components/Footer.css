@@ -1,12 +1,10 @@
 
-.contact_us{
-margin-top: 10vmax;
-}
+
 .footer{
     margin-top: 0;
     padding: 2vmax;
-    background-color:#5e17eb;
-    color:#d9d9d9;
+    background-color: rgb(7, 20, 41);
+    color:#ffff;
     display: flex;
     align-items: center;
 }
@@ -18,6 +16,7 @@ margin-top: 10vmax;
 }
 .leftFooter > h4{
     font-family: 'Franklin Gothic Medium','Arial Narrow',Arial, sans-serif;
+    text-decoration: underline;
 }
 .leftFooter > p{
     text-align: center;
@@ -57,12 +56,12 @@ margin-top: 10vmax;
     text-decoration: none;
     font-size: 1.3vmax;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    color: #d9d9d9;
+    color: #ffffff;
     transition: all 0.5s;
     margin: 0.5vmax;
 }
 .rightFooter>a:hover{
-    color:rgb(18, 2, 37);
+    color:gold;
 } 
 @media screen and (max-width:600px){
     .leftFooter >h4{

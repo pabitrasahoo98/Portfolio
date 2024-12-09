@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import MenuIcon from "@mui/icons-material/Menu";
 import "./HeaderStyle.css";
 import portfolio1 from "../images/Portfolio4.png";
-import portfolio5 from "../images/Portfolio5.png";
+import portfolio5 from "../images/Portfolio6.png";
 
 const Header = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
                 </Link>
             </Box>
             <Divider />
-            <Typography variant="h6" color={"goldenrod"} sx={{
+            <Typography variant="h6" color={"rgb(11,26, 51)"} sx={{
                 my: 2,
                 fontSize: '20px',
                 '@media (max-width: 600px)': {
@@ -33,7 +33,7 @@ const Header = () => {
                 <li><Link to={"/about"}>About</Link></li>
                 <li><Link to={"/projects"}>Projects</Link></li>
                 <li><Link to={"/experience"}>Experience</Link></li>
-                <li><Link to={"/contact"}>Contact Me</Link></li>
+                <li><Link to={"/contact"}>Contact</Link></li>
             </ul>
         </Box>
     );
@@ -41,7 +41,7 @@ const Header = () => {
     return (
         <>
             <Box>
-                <AppBar component={"nav"} sx={{ bgcolor: "#5e17eb", minHeight: "80px" }}>
+                <AppBar component={"nav"} sx={{ bgcolor: " rgb(11,26, 51)", minHeight: "60px" }}>
                     <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
                         {/* Mobile Menu Icon */}
                         <IconButton color={'inherit'} aria-label='open drawer' edge="start" sx={{ mr: 2, display: { sm: "none" } }} onClick={handleDrawerToggle}>
@@ -62,7 +62,7 @@ const Header = () => {
                                 <li><Link to={"/about"}>About</Link></li>
                                 <li><Link to={"/projects"}>Projects</Link></li>
                                 <li><Link to={"/experience"}>Experience</Link></li>
-                                <li><Link to={"/contact"}>Contact Me</Link></li>
+                                <li><Link to={"/contact"}>Contact</Link></li>
                             </ul>
                         </Box>
                     </Toolbar>

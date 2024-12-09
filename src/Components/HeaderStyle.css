@@ -20,7 +20,7 @@
 }
 
 .navigation-menu li a:hover {
-    color: rgb(18, 2, 37); /* Adds darker color on hover */
+    color:gold; /* Adds darker color on hover */
 }
 
 /* Mobile Navigation Menu */
@@ -35,14 +35,14 @@
 .mobile-navigation li a {
     text-decoration: none;
     font-size: 1.4rem;
-    color: rgb(18, 2, 37);  /* Dark color for mobile */
+    color:rgb(11,26, 51);  /* Dark color for mobile */
     font-family: Roboto, sans-serif;  /* Added fallback font */
     padding: 10px 20px; /* Adds padding for better touch target size */
     transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
 .mobile-navigation li a:hover {
-    color: goldenrod; /* Adds golden color on hover */
+    color: gold; /* Adds golden color on hover */
 }
 
 /* Mobile Drawer Menu Styling */
@@ -53,7 +53,7 @@
 /* Active Links Styling */
 .navigation-menu li a.active,
 .mobile-navigation li a.active {
-    color: goldenrod;
+    color: gold;
     font-weight: bold; /* Adds bold style to active links */
     text-decoration: underline;  /* Underlines active links */
 }
