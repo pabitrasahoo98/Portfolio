@@ -1,4 +1,3 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
@@ -7,25 +6,46 @@ import About from './Components/About';
 import Home from './Components/Home';
 import webFont from "webfontloader";
 import React from 'react';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import { Element } from 'react-scroll'; // Import Element for sections
 
 function App() {
-  React.useEffect(()=>{
+  React.useEffect(() => {
     webFont.load({
-      google:{
-        families:["Roboto","Droid Sans","Chilanka"]
+      google: {
+        families: ["Roboto", "Droid Sans", "Chilanka"]
       }
-    })
-  })
+    });
+  }, []);
+
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/projects" element={<Projects/>}/>
-      <Route path="/contact" element={<Contact/>}/>
-      <Route path="/experience" element={<Experience/>}/>
-      <Route path="/about" element={<About/>}/>
-      </Routes>
-      </BrowserRouter>
+    <>
+      <Header />
+
+      {/* Sections wrapped in Element to enable smooth scrolling */}
+      <Element name="home">
+        <Home />
+      </Element>
+
+      <Element name="about">
+        <About />
+      </Element>
+
+      <Element name="projects">
+        <Projects />
+      </Element>
+
+      <Element name="experience">
+        <Experience />
+      </Element>
+
+      <Element name="contact">
+        <Contact />
+      </Element>
+
+      <Footer />
+    </>
   );
 }
 

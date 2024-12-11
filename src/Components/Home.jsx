@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from './Layout'
 import './Home.css'
 import pdf from '../Pdf/resume_PabitraKumarSahoo.pdf'
 import hero from '../images/hero.jpg'
@@ -7,7 +6,7 @@ import { Typography } from '@mui/material'
 
 const Home = () => {
   return (
-   <Layout>
+   <>
     <div className="home">
       <div className="left">
       <Typography variant="h3" color={"#ffffff"} sx={{
@@ -26,7 +25,7 @@ const Home = () => {
         
       </div>
     </div>
-   </Layout>
+   </>
   
      
   )

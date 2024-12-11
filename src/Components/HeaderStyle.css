@@ -11,7 +11,8 @@
     margin: 0 20px;
 }
 
-.navigation-menu li a {
+.navigation-menu li a,
+.navigation-menu li .active {
     text-decoration: none;
     color: #F5F5F5;
     font-family: Chilanka, sans-serif;  /* Added fallback font */
@@ -19,8 +20,9 @@
     transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
-.navigation-menu li a:hover {
-    color:gold; /* Adds darker color on hover */
+.navigation-menu li a:hover,
+.navigation-menu li .active {
+    color: gold; /* Adds gold color on hover or active */
 }
 
 /* Mobile Navigation Menu */
@@ -32,22 +34,19 @@
     margin-top: 20px;
 }
 
-.mobile-navigation li a {
+.mobile-navigation li a,
+.mobile-navigation li .active {
     text-decoration: none;
     font-size: 1.4rem;
-    color:rgb(11,26, 51);  /* Dark color for mobile */
+    color: rgb(11, 26, 51);  /* Dark color for mobile */
     font-family: Roboto, sans-serif;  /* Added fallback font */
     padding: 10px 20px; /* Adds padding for better touch target size */
     transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
-.mobile-navigation li a:hover {
-    color: gold; /* Adds golden color on hover */
-}
-
-/* Mobile Drawer Menu Styling */
-.MuiDrawer-paper {
-    padding: 10px 0; /* Adds some padding to the drawer */
+.mobile-navigation li a:hover,
+.mobile-navigation li .active {
+    color: gold; /* Adds golden color on hover or active */
 }
 
 /* Active Links Styling */
@@ -56,6 +55,11 @@
     color: gold;
     font-weight: bold; /* Adds bold style to active links */
     text-decoration: underline;  /* Underlines active links */
+}
+
+/* Mobile Drawer Menu Styling */
+.MuiDrawer-paper {
+    padding: 10px 0; /* Adds some padding to the drawer */
 }
 
 /* Responsive Design for Mobile */
