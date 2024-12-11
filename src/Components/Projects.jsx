@@ -1,11 +1,12 @@
 import React from "react";
 import project from "../data/projects.json";
+import { Typography } from "@mui/material";
 
 const Projects = () => {
   return (
     <>
       <div className="container projects my-3" id="projects">
-        <h1>PROJECTS</h1>
+      <Typography variant="h3" gutterBottom color={"gold"} align="center">PROJECTS</Typography>
         <div className="row d-flex justify-content-center align-content-center">
           {project.map((data) => (
             <>

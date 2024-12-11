@@ -1,27 +1,73 @@
+/* Container for the contact form */
+.contact {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contactform {
+  margin-top: 20px;
+}
+
+/* Button container to center align the submit button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling for the contact form's button */
+button {
+  background-color: gold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkgoldenrod;
+}
+
+/* Social media icons section */
 .contact-icon {
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-icon .items {
+  color: black;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon .items:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+
+/* For screens 768px or smaller (Tablets and smaller devices) */
+@media (max-width: 768px) {
+  .contact {
+    padding: 15px;
   }
-  
+
+  .contact-icon {
+    gap: 20px;
+  }
+}
+
+/* For screens 480px or smaller (Mobile devices) */
+@media (max-width: 480px) {
+  .contact-icon {
+    gap: 10px;
+  }
   .contact-icon .items {
-    background-color: black;
-    margin: 10px;
-    height: 70px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    border: 2px solid yellow;
+    font-size: 25px;
   }
-  
-  .contact-icon .items:hover {
-    background-color: var(--bg-color);
-    box-shadow: var(--box-shadow);
-  }
-  
-  .contact-icon .items .icons {
-    font-size: 2rem;
-  }
+}

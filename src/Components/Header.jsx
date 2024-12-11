@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Divider, Drawer, IconButton, Toolbar} from "@mui/material";
 import { Link } from 'react-scroll'; // Import Link from react-scroll
 import MenuIcon from "@mui/icons-material/Menu";
 import "./HeaderStyle.css";
@@ -23,8 +23,9 @@ const Header = () => {
       <ul className='mobile-navigation'>
         <li><Link to="home" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Home</Link></li>
         <li><Link to="about" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">About</Link></li>
+        <li><Link to="skills" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Skills</Link></li>
         <li><Link to="projects" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Projects</Link></li>
-        <li><Link to="experience" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Experience</Link></li>
+        
         <li><Link to="contact" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Contact</Link></li>
       </ul>
     </Box>
@@ -50,8 +51,9 @@ const Header = () => {
             <ul className='navigation-menu'>
               <li><Link to="home" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Home</Link></li>
               <li><Link to="about" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">About</Link></li>
+              <li><Link to="skills" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Skills</Link></li>
               <li><Link to="projects" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Projects</Link></li>
-              <li><Link to="experience" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Experience</Link></li>
+              
               <li><Link to="contact" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">Contact</Link></li>
             </ul>
           </Box>

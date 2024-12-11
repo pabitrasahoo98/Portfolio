@@ -31,14 +31,15 @@ function App() {
       <Element name="about">
         <About />
       </Element>
+      <Element name="skills">
+        <Experience />
+      </Element>
 
       <Element name="projects">
         <Projects />
       </Element>
 
-      <Element name="experience">
-        <Experience />
-      </Element>
+      
 
       <Element name="contact">
         <Contact />

@@ -7,7 +7,7 @@ const Footer = () => {
   <div className='contact_us'>
     <div className='footer'>
         <div className='leftFooter'>
-            <h4>Contact Address</h4>
+            <h4>Connect Me</h4>
             <p>Email : pksahoo530@gmail.com</p>
             <p>Mobile : 99388000359</p>
         </div>

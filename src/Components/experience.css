@@ -1,17 +1,64 @@
-.ex {
-    width: 900px;
+.skills {
+  width: 100%; /* Full width for container */
+  max-width: 900px; /* Limit max width */
+  margin: auto;
+  padding: 40px 20px; /* Add padding for better spacing */
+  text-align: center;
+}
+
+.skills .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between items */
+}
+
+.skills .items .item {
+  width: 100%; /* Default to full width for smaller screens */
+  max-width: 280px; /* Set a max-width for larger screens */
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Hover transition */
+}
+
+.skills .items .item img {
+  width: 70px; /* Keep image size constant */
+  height: 70px; /* Maintain aspect ratio */
+  object-fit: contain;
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+.skills .items .item:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+/* Medium devices (tablet) */
+@media (max-width: 768px) {
+  .skills .items .item {
+    width: 45%; /* Adjust width for tablets and medium screens */
   }
-  
-  .ex-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--bg-color);
-    margin: 20px;
-    padding: 30px;
-    width: 800px;
-    border-radius: 10px;
-    border: 1px solid yellow;
-    box-shadow: var(--box-shadow);
+}
+
+/* Small devices (mobile) */
+@media (max-width: 480px) {
+  .skills .items .item {
+    width: 100%; /* Full width for smaller screens */
+    padding: 15px; /* Reduce padding on small screens */
   }
-  
+
+  .skills .items .item img {
+    width: 50px; /* Smaller image size on mobile */
+    height: 50px; /* Adjust image size */
+  }
+
+  .skills .items .item h3 {
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+}
+

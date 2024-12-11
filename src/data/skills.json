@@ -1,13 +1,5 @@
 [
   {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
-  },
-  {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
-  },
-  {
     "title": "JavaScript",
     "imageSrc": "skills/javascript.png"
   },
@@ -16,23 +8,40 @@
     "imageSrc": "skills/react.png"
   },
   {
+    "title": "ReactNative",
+    "imageSrc": "skills/react.png"
+  },
+  {
     "title": "Node",
     "imageSrc": "skills/node.png"
   },
   {
-    "title":"Firebase",
-    "imageSrc":"skills/firebase.png"
+    "title": "Express",
+    "imageSrc": "skills/express.js.png"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "title":"MongoDB",
+    "imageSrc":"skills/mongodb.png"
   },
   {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "title": "MySQL",
+    "imageSrc": "skills/MySQL.png"
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "MUI",
+    "imageSrc": "skills/Material UI.png"
+  }
+  ,
+  {
+    "title": "Redux",
+    "imageSrc": "skills/Redux.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/Git.png"
+  },
+   {
+    "title": "AWS",
+    "imageSrc": "skills/AWS.png"
   }
 ]
