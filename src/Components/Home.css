@@ -153,6 +153,10 @@
         margin-bottom: 20px;
         text-align: center;
     }
+    .home .left .typed-text{
+        font-size: 1rem;
+    }
+   
 
     .home .right {
         margin-bottom: 20px;

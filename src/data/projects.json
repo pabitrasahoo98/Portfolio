@@ -18,7 +18,7 @@
   {
     "key": 3,
     "title": "E-commerce Billing App",
-    "imageSrc": "projects/billApp.png",
+    "imageSrc": "projects/inventory.jpg",
     "description": "This is mobile application using ReactNative for inventory management",
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
@@ -34,7 +34,7 @@
   ,
   {
     "key": 5,
-    "title": "Facial Recognition Attendance",
+    "title": "Facial Recognition Attendance System",
     "imageSrc": "projects/face.jpg",
     "description": "This is a project made with complete Python",
     "demo": "https://www.example.com",

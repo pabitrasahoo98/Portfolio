@@ -1,3 +1,4 @@
+// src/App.js
 import './App.css';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
@@ -9,6 +10,7 @@ import React from 'react';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import { Element } from 'react-scroll'; // Import Element for sections
+import ScrollToTop from './Components/ScrollToTop'; // Import ScrollToTop component
 
 function App() {
   React.useEffect(() => {
@@ -39,13 +41,14 @@ function App() {
         <Projects />
       </Element>
 
-      
-
       <Element name="contact">
         <Contact />
       </Element>
 
       <Footer />
+
+      {/* Scroll to top button */}
+      <ScrollToTop />
     </>
   );
 }

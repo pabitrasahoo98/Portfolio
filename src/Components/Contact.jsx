@@ -48,7 +48,7 @@ const Contact = () => {
         <div className="contactform">
           <form onSubmit={sendEmail}> {/* Add onSubmit handler to trigger sendEmail function */}
             <TextField
-              label="Name"
+              label="Enter Your Name"
               fullWidth
               margin="normal"
               variant="outlined"
@@ -63,7 +63,7 @@ const Contact = () => {
               }}
             />
             <TextField
-              label="Email"
+              label="Enter Your Email"
               fullWidth
               margin="normal"
               variant="outlined"
@@ -79,7 +79,7 @@ const Contact = () => {
               }}
             />
             <TextField
-              label="Mobile"
+              label="Enter Your Mobile No"
               fullWidth
               margin="normal"
               variant="outlined"
@@ -95,7 +95,7 @@ const Contact = () => {
               }}
             />
             <TextField
-              label="Message"
+              label=" Your Message"
               fullWidth
               margin="normal"
               variant="outlined"
@@ -138,22 +138,22 @@ const Contact = () => {
 
         {/* Social Media Icons */}
         <div className="contact-icon" data-aos="zoom-in-up" data-aos-duration="1000">
-          <a href="https://www.instagram.com/pabitra_chin2/" target="_blank" className="items">
+          <a href="https://www.instagram.com/pabitra_chin2/"  className="items">
             <FaInstagram className="icons" />
           </a>
-          <a href="https://www.facebook.com/pabitrakumar.sahoo.904/" target="_blank" className="items">
+          <a href="https://www.facebook.com/pabitrakumar.sahoo.904/" className="items">
             <CiFacebook className="icons" />
           </a>
-          <a href="https://www.linkedin.com/in/pabitra-kumar-sahoo-874202237/" target="_blank" className="items">
+          <a href="https://www.linkedin.com/in/pabitra-kumar-sahoo-874202237/" className="items">
             <CiLinkedin className="icons" />
           </a>
-          <a href="https://x.com/PabitraSahoo98" target="_blank" className="items">
+          <a href="https://x.com/PabitraSahoo98" className="items">
             <FaSquareXTwitter className="icons" />
           </a>
-          <a href="https://github.com/pabitrasahoo98" target="_blank" className="items">
+          <a href="https://github.com/pabitrasahoo98"  className="items">
             <FaGithubSquare className="icons" />
           </a>
-          <a href="mailto:pksahoo530@gmail.com" target="_blank" className="items">
+          <a href="mailto:pksahoo530@gmail.com"  className="items">
             <SiGmail className="icons" />
           </a>
         </div>
