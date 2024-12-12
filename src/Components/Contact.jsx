@@ -7,12 +7,38 @@ import { FaGithubSquare } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import './contact.css';
 import { Button, TextField, Typography } from "@mui/material";
+import emailjs from 'emailjs-com';  // Import EmailJS
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");  // State for success/error messages
+
+  // EmailJS Configuration
+  const sendEmail = (e) => {
+    e.preventDefault(); // Prevent page reload on form submit
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      from_phone: mobile,
+      message: message,
+    };
+
+    // Sending email using EmailJS
+    emailjs.send('service_97or0vq', 'template_lq16y1c', templateParams, 'GTCRPpE_tAxJeqY3n')
+      .then((response) => {
+        setStatusMessage("Message sent successfully!");  // Success message
+        setName('');
+        setEmail('');
+        setMobile('');
+        setMessage('');
+      }, (err) => {
+        setStatusMessage("Failed to send the message. Please try again.");  // Error message
+      });
+  };
 
   return (
     <>
@@ -20,7 +46,7 @@ const Contact = () => {
         <Typography variant="h3" gutterBottom color={"gold"}>CONTACT ME</Typography>
         
         <div className="contactform">
-          <form>
+          <form onSubmit={sendEmail}> {/* Add onSubmit handler to trigger sendEmail function */}
             <TextField
               label="Name"
               fullWidth
@@ -97,30 +123,37 @@ const Contact = () => {
                   marginTop: "20px",
                 }}
               >
-                Submit
+                Send
               </Button>
             </div>
           </form>
+          
+          {/* Display Status Message */}
+          {statusMessage && (
+            <Typography variant="h6" align="center" style={{ marginTop: "20px", color: "gold" }}>
+              {statusMessage}
+            </Typography>
+          )}
         </div>
 
         {/* Social Media Icons */}
         <div className="contact-icon" data-aos="zoom-in-up" data-aos-duration="1000">
-          <a href="https://www.instagram.com" target="_blank" className="items">
+          <a href="https://www.instagram.com/pabitra_chin2/" target="_blank" className="items">
             <FaInstagram className="icons" />
           </a>
-          <a href="https://www.facebook.com" target="_blank" className="items">
+          <a href="https://www.facebook.com/pabitrakumar.sahoo.904/" target="_blank" className="items">
             <CiFacebook className="icons" />
           </a>
           <a href="https://www.linkedin.com/in/pabitra-kumar-sahoo-874202237/" target="_blank" className="items">
             <CiLinkedin className="icons" />
           </a>
-          <a href="https://twitter.com" target="_blank" className="items">
+          <a href="https://x.com/PabitraSahoo98" target="_blank" className="items">
             <FaSquareXTwitter className="icons" />
           </a>
           <a href="https://github.com/pabitrasahoo98" target="_blank" className="items">
             <FaGithubSquare className="icons" />
           </a>
-          <a href="mailto:webdevmastery@gmail.com" target="_blank" className="items">
+          <a href="mailto:pksahoo530@gmail.com" target="_blank" className="items">
             <SiGmail className="icons" />
           </a>
         </div>

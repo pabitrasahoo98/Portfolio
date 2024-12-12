@@ -1,0 +1,77 @@
+/* Projects Container */
+.container.projects {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  /* Grid Layout for Project Cards */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    gap: 20px;
+    justify-content: center; /* Ensures the grid is centered horizontally */
+    justify-items: center; /* Center each grid item within its grid cell */
+    align-items: start; /* Align items to the top for consistency */
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #1c1c1c;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Hover effect for better interaction */
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  /* Image Styling */
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid yellow;
+  }
+  
+  /* Button Styling */
+  .btn {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    width: 45%; /* Adjust the button size */
+    padding: 10px;
+  }
+  
+  /* Responsive Styles for Smaller Devices */
+  @media screen and (max-width: 1024px) {
+    .row {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+  
+    .btn {
+      width: 100%; /* Make buttons full-width on mobile */
+      margin: 5px 0; /* Space out buttons vertically */
+    }
+  }
+  

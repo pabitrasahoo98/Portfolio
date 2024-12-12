@@ -22,6 +22,8 @@ const Footer = () => {
             <a href="https://github.com/pabitrasahoo98">Github</a>
             <a href="https://www.facebook.com/pabitrakumar.sahoo.904/">Facebook</a>
             <a href="https://www.instagram.com/pabitra_chin2/">Instagram</a>
+            <a href="https://x.com/PabitraSahoo98/">X</a>
+            
         
 
         </div>
