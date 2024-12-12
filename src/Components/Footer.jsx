@@ -17,7 +17,7 @@ const Footer = () => {
             <p>Copyright 2025 &copy; Pabitra Kumar Sahoo</p>
         </div>
         <div className='rightFooter'>
-            <h4>Social Media Handles</h4>
+            <h4>Follow me</h4>
             <a href="https://www.linkedin.com/in/pabitra-kumar-sahoo-874202237/">Linkedin</a>
             <a href="https://github.com/pabitrasahoo98">Github</a>
             <a href="https://www.facebook.com/pabitrakumar.sahoo.904/">Facebook</a>

@@ -3,13 +3,13 @@
     "key": 1,
     "title": "Mern Stack E-Commerce Grocery Store",
     "imageSrc": "projects/ngWeb.png",
-    "description": "This is a project made with complete Mern Stack.",
+    "description": "This is an E-Commerce grocery store web app made with complete Mern Stack.",
     "demo": "https://ng-client.vercel.app/",
     "source": "https://github.com/pabitrasahoo98/NGClient"
   },
   {
     "key": 2,
-    "title": "Mern E-Commerce Grocery Store Mobile App",
+    "title": "Mern E-Commerce Grocery Mobile App",
     "imageSrc": "projects/ngApp.png",
     "description": "This is cross platform mobile application using ReactNative",
     "demo": "https://drive.google.com/file/d/1DFVdjDs2iyVhLYhiZodEx7OTUrh5E4sv/view?usp=sharing",
